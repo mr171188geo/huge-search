@@ -1,0 +1,134 @@
+* {
+	box-sizing: border-box;
+	transition: all .4s ease-in; /* плавный переход */
+}
+
+html {
+  height: 100%;
+  font: 10px Arial, sans-serif;
+}
+html, body {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+	padding-top: 3%;	
+	background: #F1F1F1;
+	color:  rgba(118, 117, 128, 0.05);
+	
+}
+header {
+  padding-bottom: 2%;
+
+}
+header, main {
+  width: 100%;
+  margin: 0 auto;
+}
+main{
+  padding: 0 10%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.search {
+  margin: 0 auto;
+  position: relative;
+  width: 80%;
+}
+.container{
+  width: calc(100% / 12 * 4 - 30px);
+  margin: 10px;
+}
+
+/* header, main {
+  
+}
+ */
+main{
+  padding: 0 12%;
+  display: flex;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 0 80px 0 10px;
+  font-weight: 700;
+  border: none;
+  background: transparent;
+  font-size: 8em;
+  color:  #7F8D8E;
+}
+input[type="text"]:hover,
+input[type="text"]:focus {
+  opacity: .4;
+}
+input[type="button"] {
+  position: absolute;
+  width: 65px;
+  height: 65px;
+  text-indent: 80px;
+  overflow: hidden;
+  right: 0;
+  top: 50%;
+  background: transparent url(../img/magnifier.svg) no-repeat center;
+  border: none;
+  transform: translate3d(-90%, -40%, 0) scale(1);
+}
+input[type="button"]:hover,
+input[type="button"]:focus {
+  opacity: .4;
+  cursor: pointer;
+}
+h1 {
+  font-size: 1.8em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #7F8D8E;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+
+  list-style-type: none;
+  width: 85%;
+
+}
+ul li a {
+  font-size: 1.3em;
+  
+  padding: 13px;
+
+  display: block;
+  margin: 10px 0;
+  cursor: pointer;
+  background: rgba(118, 117, 128, 0.05);
+  color: #7F8D8E;
+  text-decoration: none;
+  overflow: hidden;
+}
+ul li a:hover,
+ul li a:hover {
+  color: #EC5A62;
+  background: rgba(118, 117, 128, 0.1);
+}
+img {
+  display: inline-block;
+  width: 60px;
+  margin: 0 10px 0 0;
+  vertical-align: middle;
+}
+.circle {
+  border-radius: 60%;
+  overflow: hidden;
+}
+span {
+  vertical-align: middle;
+  display: inline-block;
+  font-weight: 600;
+  
+  color: inherit;
+}
